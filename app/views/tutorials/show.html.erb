@@ -1,0 +1,12 @@
+<h1><%= @tutorial.name %></h1>
+
+<% if notice %>
+  <p class="alert alert-success" id="notice"><%= notice %></p>
+<% end %>
+
+<div class="btn-toolbar">
+  <%= link_to 'Back', tutorials_path, :class => 'btn' %>
+  <%= link_to 'Edit', edit_tutorial_path(@tutorial), :class => 'btn' %>
+</div>
+
+<%= coderay(@tutorial.content).html_safe %>
