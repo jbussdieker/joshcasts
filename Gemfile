@@ -7,6 +7,7 @@ gem 'rails', '3.2.12'
 
 gem 'pg'
 gem 'coderay'
+gem 'devise'
 
 
 # Gems used only for assets and not required
