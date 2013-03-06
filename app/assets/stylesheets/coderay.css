@@ -19,7 +19,7 @@
 .CodeRay .comment  { color:#BC9358; font-style: italic; } /* comment */
 .CodeRay .char { color:#509E4F }                      /* escaped character */
 .CodeRay .class { color:#FFF }                         /* class */
-.CodeRay .constant { color:#FFF }                         /* constant */
+.CodeRay .constant { color:#FC0 }                         /* constant */
 .CodeRay .fl { color:#A4C260 }                      /* float */
 .CodeRay .function { color:#FFC56D }                      /* function */
 .CodeRay .global-variable { color:#D0CFFE }                      /* global variable */
