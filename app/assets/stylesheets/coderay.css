@@ -43,3 +43,6 @@
   float: left;
   width: 100%;
 }
+.CodeRay .change {
+  color: cyan;
+}
