@@ -38,13 +38,13 @@
 .CodeRay .predefined-constant { color: #6C9CBD }
 .CodeRay .delimiter  { color:#A4C260 }                      /* string */
 .CodeRay .line.insert {
-  background: lightgreen;
+  background: green;
   display: inline-block;
   float: left;
   width: 100%;
 }
 .CodeRay .line.delete {
-  background: pink;
+  background: red;
   display: inline-block;
   float: left;
   width: 100%;
