@@ -1,4 +1,6 @@
 class TutorialsController < ApplicationController
+  before_filter authenticate_user!, :except => [:index, :show]
+
   def index
     @tutorials = Tutorial.all
   end
@@ -8,17 +10,14 @@ class TutorialsController < ApplicationController
   end
 
   def new
-    authenticate_user!
     @tutorial = Tutorial.new
   end
 
   def edit
-    authenticate_user!
     @tutorial = Tutorial.find(params[:id])
   end
 
   def create
-    authenticate_user!
     @tutorial = Tutorial.new(params[:tutorial])
     if @tutorial.save
       redirect_to @tutorial, notice: 'Tutorial was successfully created.'
@@ -28,7 +27,6 @@ class TutorialsController < ApplicationController
   end
 
   def update
-    authenticate_user!
     @tutorial = Tutorial.find(params[:id])
 
     if @tutorial.update_attributes(params[:tutorial])
@@ -39,7 +37,6 @@ class TutorialsController < ApplicationController
   end
 
   def destroy
-    authenticate_user!
     @tutorial = Tutorial.find(params[:id])
     @tutorial.destroy
 
